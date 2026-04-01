@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<InputField name="УзелИнформационнойБазы" id="1">
+					<DataPath>Запись.УзелИнформационнойБазы</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ОбъектРегистрации" id="4">
+					<DataPath>Запись.ОбъектРегистрации</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОбъектРегистрацииКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ОбъектРегистрацииРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Настройки" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<CheckBoxField name="ЭтоПОД" id="10">
+					<DataPath>Запись.ЭтоПОД</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЭтоПОДКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ЭтоПОДРасширеннаяПодсказка" id="12"/>
+				</CheckBoxField>
+				<CheckBoxField name="РегистрацияОбъектаРазрешена" id="23">
+					<DataPath>Запись.РегистрацияОбъектаРазрешена</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РегистрацияОбъектаРазрешенаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="РегистрацияОбъектаРазрешенаРасширеннаяПодсказка" id="25"/>
+				</CheckBoxField>
+				<UsualGroup name="НастройкиПравилРегистрации" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки правил регистрации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки правил регистрации</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="НастройкиПравилРегистрацииРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<CheckBoxField name="ПрименитьСобственноеПравило" id="16">
+							<DataPath>Запись.ПрименитьСобственноеПравило</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПрименитьСобственноеПравилоКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПрименитьСобственноеПравилоРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">ПрименитьСобственноеПравилоПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="НастроитьПравило" id="26">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьПравило</CommandName>
+							<ExtendedTooltip name="НастроитьПравилоРасширеннаяПодсказка" id="27"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.ПРО_ПереопределяемыеПравилаРегистрацииОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="НастроитьПравило" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить правило</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить правило</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьПравило</Action>
+		</Command>
+	</Commands>
+</Form>

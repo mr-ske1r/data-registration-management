@@ -1,0 +1,7 @@
+ConfigDumpInfo.xml
+.vscode/
+
+# Служебные файлы Windows
+Thumbs.db
+desktop.ini
+.DS_Store

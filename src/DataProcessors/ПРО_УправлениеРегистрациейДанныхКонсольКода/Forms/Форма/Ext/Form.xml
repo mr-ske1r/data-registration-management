@@ -1,0 +1,1489 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Консоль кода</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<ShowTitle>false</ShowTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПРО_ЗаписатьИЗакрыть" id="108">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ПРО_ЗаписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаПРО_ЗаписатьИЗакрытьРасширеннаяПодсказка" id="109"/>
+			</Button>
+			<Button name="ЗаменитьВхождения" id="22">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ЗаменитьВхождения</CommandName>
+				<ExtendedTooltip name="ЗаменитьВхожденияРасширеннаяПодсказка" id="23"/>
+			</Button>
+			<Button name="КонструкторЗапроса" id="80">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КонструкторЗапроса</CommandName>
+				<ExtendedTooltip name="КонструкторЗапросаРасширеннаяПодсказка" id="81"/>
+			</Button>
+			<Button name="ВыполнитьНаКлиенте" id="12">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ВыполнитьНаКлиенте</CommandName>
+				<ExtendedTooltip name="ВыполнитьНаКлиентеРасширеннаяПодсказка" id="13"/>
+			</Button>
+			<Button name="ВыполнитьНаСервере" id="14">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ВыполнитьНаСервере</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Проверить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ВыполнитьНаСервереРасширеннаяПодсказка" id="15"/>
+			</Button>
+			<Button name="СохранитьКак" id="64">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.СохранитьКак</CommandName>
+				<ExtendedTooltip name="СохранитьКакРасширеннаяПодсказка" id="65"/>
+			</Button>
+			<Button name="СохранитьВФайл" id="16">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.СохранитьВФайл</CommandName>
+				<ExtendedTooltip name="СохранитьВФайлРасширеннаяПодсказка" id="17"/>
+			</Button>
+			<Button name="ЗагрузитьИзФайла" id="18">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ЗагрузитьИзФайла</CommandName>
+				<ExtendedTooltip name="ЗагрузитьИзФайлаРасширеннаяПодсказка" id="19"/>
+			</Button>
+			<Popup name="Тема" id="4">
+				<Enabled>false</Enabled>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тема</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тема</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="5"/>
+				<ChildItems>
+					<Button name="СветлаяТема" id="6">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СветлаяТема</CommandName>
+						<ExtendedTooltip name="СветлаяТемаРасширеннаяПодсказка" id="7"/>
+					</Button>
+					<Button name="ТемнаяТема" id="8">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ТемнаяТема</CommandName>
+						<ExtendedTooltip name="ТемнаяТемаРасширеннаяПодсказка" id="9"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ТолькоПросмотр" id="24">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ТолькоПросмотр</CommandName>
+				<ExtendedTooltip name="ТолькоПросмотрРасширеннаяПодсказка" id="25"/>
+			</Button>
+			<Button name="БыстрыеПодсказки" id="38">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.БыстрыеПодсказки</CommandName>
+				<ExtendedTooltip name="БыстрыеПодсказкиРасширеннаяПодсказка" id="39"/>
+			</Button>
+			<Button name="ПодсвечиватьЗапросы" id="40">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ПодсвечиватьЗапросы</CommandName>
+				<ExtendedTooltip name="ПодсвечиватьЗапросыРасширеннаяПодсказка" id="41"/>
+			</Button>
+			<Button name="КартаКода" id="42">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.КартаКода</CommandName>
+				<ExtendedTooltip name="КартаКодаРасширеннаяПодсказка" id="43"/>
+			</Button>
+			<Button name="СтрокаСостояния" id="66">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.СтрокаСостояния</CommandName>
+				<ExtendedTooltip name="СтрокаСостоянияРасширеннаяПодсказка" id="67"/>
+			</Button>
+			<Button name="ОтображатьПробелыИТабуляции" id="85">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОтображатьПробелыИТабуляции</CommandName>
+				<ExtendedTooltip name="ОтображатьПробелыИТабуляцииРасширеннаяПодсказка" id="86"/>
+			</Button>
+			<Button name="СравнитьСОригиналом" id="68">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.СравнитьСОригиналом</CommandName>
+				<ExtendedTooltip name="СравнитьСОригиналомРасширеннаяПодсказка" id="69"/>
+			</Button>
+			<Popup name="Примеры" id="28">
+				<Visible>false</Visible>
+				<Enabled>false</Enabled>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Примеры</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Примеры</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Shape>Usual</Shape>
+				<ExtendedTooltip name="ПримерыРасширеннаяПодсказка" id="29"/>
+				<ChildItems>
+					<Button name="ЗагрузитьПользовательскиеСниппеты" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьПользовательскиеСниппеты</CommandName>
+						<ExtendedTooltip name="ЗагрузитьПользовательскиеСниппетыРасширеннаяПодсказка" id="31"/>
+					</Button>
+					<Button name="ЗагрузитьПользовательскиеФункции" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьПользовательскиеФункции</CommandName>
+						<ExtendedTooltip name="ЗагрузитьПользовательскиеФункцииРасширеннаяПодсказка" id="33"/>
+					</Button>
+					<Button name="ФормаЗагрузитьПользовательскиеОбъекты" id="36">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьПользовательскиеОбъекты</CommandName>
+						<ExtendedTooltip name="ФормаЗагрузитьПользовательскиеОбъектыРасширеннаяПодсказка" id="37"/>
+					</Button>
+					<Button name="ЯзыкПодсказок" id="34">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЯзыкПодсказок</CommandName>
+						<ExtendedTooltip name="ЯзыкПодсказокРасширеннаяПодсказка" id="35"/>
+					</Button>
+					<Button name="ПереключениеРежимаЗапроса" id="44">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПереключениеРежимаЗапроса</CommandName>
+						<ExtendedTooltip name="ПереключениеРежимаЗапросаРасширеннаяПодсказка" id="45"/>
+					</Button>
+					<Button name="ФормаПоказатьПользовательскиеПодсказки" id="46">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоказатьПользовательскиеПодсказки</CommandName>
+						<ExtendedTooltip name="ФормаПоказатьПользовательскиеПодсказкиРасширеннаяПодсказка" id="47"/>
+					</Button>
+					<Button name="ФормаИзменитьРазмерШрифта" id="48">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ИзменитьРазмерШрифта</CommandName>
+						<ExtendedTooltip name="ФормаИзменитьРазмерШрифтаРасширеннаяПодсказка" id="49"/>
+					</Button>
+					<Button name="ФормаЗагрузитьСниппетыИзФайла" id="78">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьСниппетыИзФайла</CommandName>
+						<ExtendedTooltip name="ФормаЗагрузитьСниппетыИзФайлаРасширеннаяПодсказка" id="79"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ПоказатьСкрытьНастройки" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПоказатьСкрытьНастройки</CommandName>
+				<ExtendedTooltip name="ПоказатьСкрытьНастройкиРасширеннаяПодсказка" id="51"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ПараметрыПравил" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры правил</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры правил</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ПараметрыПравилРасширеннаяПодсказка" id="94"/>
+			<ChildItems>
+				<UsualGroup name="Группа1" id="104">
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<VerticalAlign>Center</VerticalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="105"/>
+					<ChildItems>
+						<InputField name="ПРО_ДанныеИБ" id="95">
+							<DataPath>ПРО_ДанныеИБ</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>30</MaxWidth>
+							<ChoiceButton>true</ChoiceButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ChooseType>false</ChooseType>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выберите данные для отладки</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ПРО_ДанныеИБКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="ПРО_ДанныеИБРасширеннаяПодсказка" id="97"/>
+						</InputField>
+						<LabelDecoration name="Декорация1" id="98">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;color #2e8b57&gt;Доступные параметры&lt;/&gt;: &lt;b&gt;ДанныеИБ&lt;/&gt;, &lt;b&gt;Узел&lt;/&gt;, &lt;b&gt;УзлыПолучатели&lt;/&gt;, &lt;b&gt;ИсключаемыеУзлы&lt;/&gt;, &lt;b&gt;ДополнительныеПараметры.&lt;/&gt;
+&lt;color #2e8b57&gt;Результат выполнения&lt;/&gt;: &lt;b&gt;ФильтрПройден = Истина;&lt;/&gt; (Значение по умолчанию: Ложь).</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="100"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаОписанийПараметров" id="106">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>?</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа описаний параметров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>PopUp</Behavior>
+							<ExtendedTooltip name="ГруппаОписанийПараметровРасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<LabelDecoration name="Декорация2" id="101">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ДанныеИБ&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - СправочникОбъект, ДокументОбъект - данные для проверки.
+&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Узел&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - текущий узел плана обмена, для которого применяется правило.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;УзлыПолучатели&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - Массив - массив узлов получателей. &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ИсключаемыеУзлы&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - Массив - исключаемые узлы после исполнения алгоритма. &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ДополнительныеПараметры&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - Структура - уточняющие сведения об изменяемых данных:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * ОбъектМетаданных - ОбъектМетаданных - объект метаданных, которому соответствуют изменяемые данные. Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * ЭтоРегистр - Булево - значение Истина означает, что обрабатывается регистр. Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * ЭтоУдалениеОбъекта - Булево - значение Истина означает, что обрабатывается удаление объекта. Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * РежимЗаписи - см. в синтакс-помощнике РежимЗаписиДокумента - режим записи документа (только для документов). &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * Замещение - Булево - режим записи регистра (только для регистров). Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * ПроверятьСсылку - Булево - признак необходимости учитывать версию данных на момент до их изменения. &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * Выгрузка - Булево - параметр определяет контекст выполнения правила регистрации.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;        Истина - правило регистрации выполняется в контексте выгрузки объекта.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;       Ложь - правило регистрации выполняется в контексте перед записью объекта. Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация2КонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="103"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<CommandBar name="КоманднаяПанельСравнения" id="70">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель сравнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Командная панель сравнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КоманднаяПанельСравненияРасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<Button name="ОтключитьРежимСравнения" id="72">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ОтключитьРежимСравнения</CommandName>
+					<ExtendedTooltip name="ОтключитьРежимСравненияРасширеннаяПодсказка" id="73"/>
+				</Button>
+				<Button name="ПредыдущееРасхождение" id="74">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ПредыдущееРасхождение</CommandName>
+					<ExtendedTooltip name="ПредыдущееРасхождениеРасширеннаяПодсказка" id="75"/>
+				</Button>
+				<Button name="СледующееРасхождение" id="76">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.СледующееРасхождение</CommandName>
+					<ExtendedTooltip name="СледующееРасхождениеРасширеннаяПодсказка" id="77"/>
+				</Button>
+			</ChildItems>
+		</CommandBar>
+		<UsualGroup name="Настройки" id="52">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="53"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастроек1" id="87">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настроек1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастроек1РасширеннаяПодсказка" id="88"/>
+					<ChildItems>
+						<UsualGroup name="ИсходныйКод" id="57">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходный код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходный код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ИсходныйКодРасширеннаяПодсказка" id="58"/>
+							<ChildItems>
+								<InputField name="КаталогИсходногоКодаКонфигурации" id="54">
+									<DataPath>Объект.КаталогИсходногоКодаКонфигурации</DataPath>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Путь к каталогу, в который выгружена вся конфигурация (меню конфигуратора "Конфигурация" - "Выгрузить конфигурацию в файлы")</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ChoiceButton>true</ChoiceButton>
+									<ContextMenu name="КаталогИсходногоКодаКонфигурацииКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="КаталогИсходногоКодаКонфигурацииРасширеннаяПодсказка" id="56"/>
+									<Events>
+										<Event name="StartChoice">КаталогИсходногоКодаКонфигурацииНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<Button name="ЗагрузитьОбщиеМодули" id="59">
+									<Type>UsualButton</Type>
+									<Enabled>false</Enabled>
+									<CommandName>Form.Command.ЗагрузитьОбщиеМодули</CommandName>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ExtendedTooltip name="ЗагрузитьОбщиеМодулиРасширеннаяПодсказка" id="60"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастроек2" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настроек2</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастроек2РасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<CheckBoxField name="СохранятьКодПриВыполнении" id="61">
+							<DataPath>СохранятьКодПриВыполнении</DataPath>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="СохранятьКодПриВыполненииКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="СохранятьКодПриВыполненииРасширеннаяПодсказка" id="63"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаНастроек3" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настроек3</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастроек3РасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<RadioButtonField name="ПоказыватьЗначенияПеременныхПослеВыполнения" id="82">
+							<DataPath>ПоказыватьЗначенияПеременныхПослеВыполнения</DataPath>
+							<RadioButtonType>Tumbler</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Не показывать</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">0</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>В отдельном окне</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">1</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Во всплывающих подсказках</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:decimal">2</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПоказыватьЗначенияПеременныхПослеВыполненияКонтекстноеМеню" id="83"/>
+							<ExtendedTooltip name="ПоказыватьЗначенияПеременныхПослеВыполненияРасширеннаяПодсказка" id="84"/>
+						</RadioButtonField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<HTMLDocumentField name="ПолеHTML" id="1">
+			<DataPath>HTML</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ПолеHTMLКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+			</ContextMenu>
+			<ExtendedTooltip name="ПолеHTMLРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="DocumentComplete">ConsoleOnReady</Event>
+				<Event name="OnClick">ConsoleOnClick</Event>
+			</Events>
+		</HTMLDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПРО_УправлениеРегистрациейДанныхКонсольКода</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.КаталогИсходногоКодаКонфигурации</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="HTML" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогИсходников" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог исходников</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТолькоПросмотр" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Только просмотр</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументЗагружен" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ загружен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресМакета" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес макета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АнглийскийЯзык" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Английский язык</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВерсияОбработки" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИндексныйФайл" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Индексный файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИсходникиЗагружены" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исходники загружены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БыстрыеПодсказки" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстрые подсказки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПодсвечиватьЗапросы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсвечивать запросы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидимостьКартыКода" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видимость карты кода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РежимЗапроса" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим запроса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазделительПути" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разделитель пути</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресОбщихМодулей" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес метаданных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИменаОбщихМодулей" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имена общих модулей</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ГлобальныйМодули" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Глобальный модули</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ИмяСохраненногоФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя сохраненного файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СохранятьКодПриВыполнении" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически сохранять код при выполнении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>СохранятьКодПриВыполнении</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВидимостьСтрокиСостояния" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Видимость строки состояния</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВидимостьСтрокиСостояния</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОригинальныйКод" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оригинальный код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьЗначенияПеременныхПослеВыполнения" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать значения переменных после выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>ПоказыватьЗначенияПеременныхПослеВыполнения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОтображатьПробелыИТабуляции" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать пробелы и табуляции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ОтображатьПробелыИТабуляции</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресХраненияПеременных" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранения переменных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПРО_ДанныеИБ" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные ИБ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ПРО_ИсходныйИсполняемыйКод" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРО исходный исполняемый код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПРО_ЗакрытьССохранением" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ПРО закрыть с сохранением</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СветлаяТема" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Светлая</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Светлая тема</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УправлениеТемами</Action>
+		</Command>
+		<Command name="ТемнаяТема" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Темная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Темная тема</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УправлениеТемами</Action>
+		</Command>
+		<Command name="КонструкторЗапроса" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор запроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Query wizard</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор запроса</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Query wizard</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizard</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КонструкторЗапроса</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьНаКлиенте" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На клиенте</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>At client</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить код на клиенте</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьНаКлиенте</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ВыполнитьНаСервере" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На сервере</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>At server</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить код на сервере</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GenerateReport</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьНаСервере</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СохранитьВФайл" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить в файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить код в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+S</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьВФайл</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ЗагрузитьИзФайла" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить код из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.LoadReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьИзФайла</Action>
+		</Command>
+		<Command name="ЗаменитьВхождения" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить вхождения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заменить вхождения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+F2</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Rename</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗаменитьВхождения</Action>
+		</Command>
+		<Command name="ТолькоПросмотр" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить режим редактирования</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить режим редактирования кода (только просмотр)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SpreadsheetReadOnly</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ТолькоПросмотр</Action>
+		</Command>
+		<Command name="ЗагрузитьПользовательскиеСниппеты" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользовательские сниппеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользовательские сниппеты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПользовательскиеСниппеты</Action>
+		</Command>
+		<Command name="ЗагрузитьПользовательскиеФункции" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользовательские функции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользовательские функции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПользовательскиеФункции</Action>
+		</Command>
+		<Command name="ЯзыкПодсказок" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Язык подсказок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Язык подсказок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЯзыкПодсказок</Action>
+		</Command>
+		<Command name="ЗагрузитьПользовательскиеОбъекты" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользовательские объекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользовательские объекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьПользовательскиеОбъекты</Action>
+		</Command>
+		<Command name="БыстрыеПодсказки" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить быстрые подсказки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить быстрые подсказки. Если подсказки выключены, то для их вызова используется CTRL+SPACE</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SpreadsheetShowComments</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>БыстрыеПодсказки</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПодсвечиватьЗапросы" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить подсветку синтаксиса языка запросов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить подсветку синтаксиса языка запросов для текущей темы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionConditionalAppearance</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПодсвечиватьЗапросы</Action>
+		</Command>
+		<Command name="КартаКода" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение карты кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение карты кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExternalDataSourceFunction</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КартаКода</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПереключениеРежимаЗапроса" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключение режима запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Переключение режима запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПереключениеРежимаЗапроса</Action>
+		</Command>
+		<Command name="ПоказатьПользовательскиеПодсказки" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пользовательские подсказки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать пользовательские подсказки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьПользовательскиеПодсказки</Action>
+		</Command>
+		<Command name="ИзменитьРазмерШрифта" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить размер шрифта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить размер шрифта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьРазмерШрифта</Action>
+		</Command>
+		<Command name="ПоказатьСкрытьНастройки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать скрыть настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать/скрыть настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Setting</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьСкрытьНастройки</Action>
+		</Command>
+		<Command name="ЗагрузитьОбщиеМодули" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить общие модули</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полная загрузка структуры всех общих модулей из исходников. Как правило, такая загрузка не требуется т.к. при первом обращении к общему модулю в коде, все его процедуры и функции будут подгружены автоматически.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьОбщиеМодули</Action>
+		</Command>
+		<Command name="СохрянятьКодПриВыполнении" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматически сохрянять код при выполнении</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохрянять код при выполнении</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="СохранитьКак" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить как...</v8:content>
+				</v8:item>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Save as...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить как...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+Shift+S</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.SaveReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьКак</Action>
+		</Command>
+		<Command name="СтрокаСостояния" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка состояния</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение строки состояния</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SwitchActivity</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СтрокаСостояния</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="СравнитьСОригиналом" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить с оригиналом</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнить с оригиналом</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExternalDataSourceCubeDimensionTable</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СравнитьСОригиналом</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ОтключитьРежимСравнения" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить режим сравнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выйти из режима сравнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExternalDataSourceCubeDimensionTable</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтключитьРежимСравнения</Action>
+		</Command>
+		<Command name="СледующееРасхождение" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующее расхождение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к следующему расхождению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СледующееРасхождение</Action>
+		</Command>
+		<Command name="ПредыдущееРасхождение" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущее расхождение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к предыдущему расхождению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveUp</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПредыдущееРасхождение</Action>
+		</Command>
+		<Command name="ЗагрузитьСниппетыИзФайла" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сниппеты из файла</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить сниппеты из файла шаблонов 1С (*.st)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСниппетыИзФайла</Action>
+		</Command>
+		<Command name="ОтображатьПробелыИТабуляции" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отображать пробелы и табуляции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить/выключить отображение пробелоа и табуляций</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldChooseType</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОтображатьПробелыИТабуляции</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ПРО_ЗаписатьИЗакрыть" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Man записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПРО_ЗаписатьИЗакрыть</Action>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="manИсходныйИсполняемыйКод">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Parameter>
+		<Parameter name="manОбъектРегистрации">
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+				<v8:TypeSet>cfg:CatalogRef</v8:TypeSet>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

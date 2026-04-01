@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ExchangePlan uuid="2f78d1f5-5885-4d42-b46d-ee5126094799">
+		<InternalInfo>
+			<xr:ThisNode>0f5c6fb8-72b1-4ccb-94dc-8a52569d8927</xr:ThisNode>
+			<xr:GeneratedType name="ExchangePlanObject.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Object">
+				<xr:TypeId>5ac4d926-d7af-483c-8844-c35f59f85ddd</xr:TypeId>
+				<xr:ValueId>3ae6d23d-2592-4417-b920-f5042689dc54</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanRef.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Ref">
+				<xr:TypeId>15cf4324-678e-43d7-aa76-2d7ce75240a0</xr:TypeId>
+				<xr:ValueId>17cba37a-28a7-4bc7-a6e4-b76d5f4c77ae</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanSelection.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Selection">
+				<xr:TypeId>4949ac6a-fec7-481b-b8a8-916d8cd0271c</xr:TypeId>
+				<xr:ValueId>21c68e0f-9060-4261-a2d7-c09c46d15e5c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanList.СинхронизацияДанныхЧерезУниверсальныйФормат" category="List">
+				<xr:TypeId>435e6016-6f61-4d72-bb3c-02e7acb86ce5</xr:TypeId>
+				<xr:ValueId>c73a304c-8c26-442c-927f-999bde5b7845</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanManager.СинхронизацияДанныхЧерезУниверсальныйФормат" category="Manager">
+				<xr:TypeId>d8711820-1ff0-4d14-857c-eac953b4b282</xr:TypeId>
+				<xr:ValueId>c2031b0f-f6a1-46b7-89c7-7c1171107163</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СинхронизацияДанныхЧерезУниверсальныйФормат</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>886887cd-8fd0-4bec-899c-100aab33747d</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</ExchangePlan>
+</MetaDataObject>
