@@ -25,6 +25,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ПРО_ИдентификаторОбъектаМетаданных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПРО_УправлениеРегистрациейДанныхКонсольКода</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПРО_ПереопределяемыеПравилаРегистрацииОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ПРО_ДатаКэшаПравилРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ПРО_КэшПравилРегистрации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПРО_УправлениеПравиламиРегистрацииСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ПРО_АктуальнаяДатаОбновленияПравилКэш</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПРО_ДатаСбросаКэшаПравилРегистрации</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
