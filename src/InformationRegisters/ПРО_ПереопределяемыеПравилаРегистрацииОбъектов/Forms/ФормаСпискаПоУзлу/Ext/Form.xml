@@ -171,6 +171,9 @@
 				</CheckBoxField>
 				<CheckBoxField name="ЭтоПОД" id="33">
 					<DataPath>Список.ЭтоПОД</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ЭтоПОДКонтекстноеМеню" id="34"/>
 					<ExtendedTooltip name="ЭтоПОДРасширеннаяПодсказка" id="35"/>

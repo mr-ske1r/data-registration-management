@@ -164,7 +164,12 @@
 			<FullTextSearch>DontUse</FullTextSearch>
 			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
 			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
-			<RecordPresentation/>
+			<RecordPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило регистрации</v8:content>
+				</v8:item>
+			</RecordPresentation>
 			<ExtendedRecordPresentation/>
 			<ListPresentation>
 				<v8:item>

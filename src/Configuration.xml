@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПРО_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>Nastaskov Mikhail</Vendor>
-			<Version>1.0.3.1</Version>
+			<Version>1.0.3.2</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>

@@ -20,11 +20,21 @@
 					<v8:content>Шапка</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:TableHeaderBackColor</BackColor>
 			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="20"/>
 			<ChildItems>
 				<InputField name="УзелИнформационнойБазы" id="1">
 					<DataPath>Запись.УзелИнформационнойБазы</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Узел</v8:content>
+						</v8:item>
+					</Title>
+					<Width>24</Width>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="УзелИнформационнойБазыКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="УзелИнформационнойБазыРасширеннаяПодсказка" id="3"/>
@@ -32,6 +42,8 @@
 				<InputField name="ОбъектРегистрации" id="4">
 					<DataPath>Запись.ОбъектРегистрации</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Width>24</Width>
+					<ChoiceButton>false</ChoiceButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ОбъектРегистрацииКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ОбъектРегистрацииРасширеннаяПодсказка" id="6"/>
@@ -54,18 +66,16 @@
 			<Group>Vertical</Group>
 			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="22"/>
 			<ChildItems>
-				<CheckBoxField name="ЭтоПОД" id="10">
-					<DataPath>Запись.ЭтоПОД</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ЭтоПОДКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ЭтоПОДРасширеннаяПодсказка" id="12"/>
-				</CheckBoxField>
 				<CheckBoxField name="РегистрацияОбъектаРазрешена" id="23">
 					<DataPath>Запись.РегистрацияОбъектаРазрешена</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регистрация разрешена</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
+					<CheckBoxType>Switcher</CheckBoxType>
 					<ContextMenu name="РегистрацияОбъектаРазрешенаКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="РегистрацияОбъектаРазрешенаРасширеннаяПодсказка" id="25"/>
 				</CheckBoxField>
@@ -88,8 +98,14 @@
 					<ChildItems>
 						<CheckBoxField name="ПрименитьСобственноеПравило" id="16">
 							<DataPath>Запись.ПрименитьСобственноеПравило</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Собственное правило</v8:content>
+								</v8:item>
+							</Title>
 							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
+							<CheckBoxType>Switcher</CheckBoxType>
 							<ContextMenu name="ПрименитьСобственноеПравилоКонтекстноеМеню" id="17"/>
 							<ExtendedTooltip name="ПрименитьСобственноеПравилоРасширеннаяПодсказка" id="18"/>
 							<Events>
@@ -99,10 +115,47 @@
 						<Button name="НастроитьПравило" id="26">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.НастроитьПравило</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="НастроитьПравилоРасширеннаяПодсказка" id="27"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Подвал" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:TableFooterBackColor</BackColor>
+			<ExtendedTooltip name="ПодвалРасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<LabelDecoration name="ДекорацияИсточникВозникновенияПравила" id="36">
+					<TextColor>web:SteelBlue</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация источник возникновения правила</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияИсточникВозникновенияПравилаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ДекорацияИсточникВозникновенияПравилаРасширеннаяПодсказка" id="38"/>
+				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
