@@ -257,8 +257,9 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>&lt;color #2e8b57&gt;Доступные параметры&lt;/&gt;: &lt;b&gt;ДанныеИБ&lt;/&gt;, &lt;b&gt;Узел&lt;/&gt;, &lt;b&gt;УзлыПолучатели&lt;/&gt;, &lt;b&gt;ИсключаемыеУзлы&lt;/&gt;, &lt;b&gt;ДополнительныеПараметры.&lt;/&gt;
-&lt;color #2e8b57&gt;Результат выполнения&lt;/&gt;: &lt;b&gt;ФильтрПройден = Истина;&lt;/&gt; (Значение по умолчанию: Ложь).</v8:content>
+									<v8:content>&lt;color #2e8b57&gt;Доступные параметры&lt;/&gt;: &lt;b&gt;ДанныеИБ&lt;/&gt;, &lt;b&gt;Узел&lt;/&gt;, &lt;b&gt;УзлыПолучатели&lt;/&gt;, &lt;b&gt;ИсключаемыеУзлы&lt;/&gt;, &lt;b&gt;ДополнительныеПараметры&lt;/&gt;, &lt;b&gt;ДополнительнаяРегистрация.&lt;/&gt;
+&lt;color #2e8b57&gt;Результат выполнения&lt;/&gt;: &lt;b&gt;ФильтрПройден = Истина;&lt;/&gt; (Значение по умолчанию: Ложь).
+&lt;color #2e8b57&gt;Связанные объекты&lt;/&gt;: &lt;b&gt;ПРО_ИсполняемыйКод.ЗарегистрироватьСвязанные(ДополнительнаяРегистрация, Ссылки, ТолькоНевыгруженные);&lt;/&gt;</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="99"/>
@@ -284,7 +285,7 @@
 									<Title formatted="true">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ДанныеИБ&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - СправочникОбъект, ДокументОбъект - данные для проверки.
+											<v8:content>&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ДанныеИБ&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - СправочникОбъект, ДокументОбъект - данные для проверки; при повторной проверке - ссылка (сохраненное состояние). У объекта документа Проведен уже учитывает режим записи.
 &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Узел&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - текущий узел плана обмена, для которого применяется правило.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
 &lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;УзлыПолучатели&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - Массив - массив узлов получателей. &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
 &lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ИсключаемыеУзлы&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - Массив - исключаемые узлы после исполнения алгоритма. &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
@@ -297,7 +298,17 @@
 &lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * ПроверятьСсылку - Булево - признак необходимости учитывать версию данных на момент до их изменения. &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
 &lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * Выгрузка - Булево - параметр определяет контекст выполнения правила регистрации.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
 &lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;        Истина - правило регистрации выполняется в контексте выгрузки объекта.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
-&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;       Ложь - правило регистрации выполняется в контексте перед записью объекта. Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;       Ложь - правило регистрации выполняется в контексте перед записью объекта. Обязательный.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ДополнительнаяРегистрация&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt; - заявка на регистрацию связанных объектов на текущий узел. Заполняется только методом:&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;ПРО_ИсполняемыйКод.ЗарегистрироватьСвязанные(ДополнительнаяРегистрация, Ссылки, ТолькоНевыгруженные = Ложь)&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * Ссылки - ссылка, массив или фиксированный массив ссылок. Неопределено, Null и пустые ссылки пропускаются.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    * ТолькоНевыгруженные - Булево - Истина: только объекты, которые еще не отправлялись на узел и не сопоставлялись с ним.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    Регистрация выполняется при записи объекта и при ручной регистрации ссылки на узел, если ФильтрПройден = Истина и узел остался в получателях. При выгрузке, удалении и на узел-отправитель не выполняется.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    Объекты должны входить в состав плана обмена, а их тип - быть разрешен для узла, иначе они не уйдут при выгрузке.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;    Не вызывайте ПланыОбмена.ЗарегистрироватьИзменения в коде правила напрямую.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Пример&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;: ПРО_ИсполняемыйКод.ЗарегистрироватьСвязанные(ДополнительнаяРегистрация, Файлы, Истина);&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;b&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;Предпросмотр&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;bgcolor #ffffff&gt;&lt;color #333333&gt;: «Выполнить на сервере» с выбранными данными покажет, что будет зарегистрировано, ничего не регистрируя.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 										</v8:item>
 									</Title>
 									<ContextMenu name="Декорация2КонтекстноеМеню" id="102"/>

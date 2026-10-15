@@ -54,7 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПРО_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor>Nastaskov Mikhail</Vendor>
-			<Version>1.0.3.3</Version>
+			<Version>1.0.4.0</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -73,6 +73,7 @@
 			<CommonModule>ПРО_УправлениеПравиламиРегистрации</CommonModule>
 			<CommonModule>ПРО_УправлениеПравиламиРегистрацииПовтИсп</CommonModule>
 			<CommonModule>ПРО_УправлениеПравиламиРегистрацииСлужебный</CommonModule>
+			<CommonModule>ПРО_ИсполняемыйКод</CommonModule>
 			<ExchangePlan>СинхронизацияДанныхЧерезУниверсальныйФормат</ExchangePlan>
 			<EventSubscription>ПРО_ПередЗаписьюУзлаПланаОбмена</EventSubscription>
 			<EventSubscription>ПРО_ПриЗаписиУзлаПланаОбмена</EventSubscription>
